@@ -11,14 +11,16 @@ const auth = require('./auth');
 const tinder = require('./tinder');
 const login = require('./login');
 const users = require('./users');
+const faceTest = require('./faceTest');
 
 /**
  * routes
  */
 router.use('/auth', auth);
-router.use('/tinder', tinder);
+// router.use('/tinder', tinder);
 router.use('/users', users);
 router.use('/login', login);
+router.use('/faceTest', faceTest);
 
 /* default */
 router.get('/', function(req, res, next) {
